@@ -1,1 +1,1 @@
-asd
+memeinvazio frontend fejlesztése
