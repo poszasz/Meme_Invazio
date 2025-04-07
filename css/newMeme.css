@@ -97,7 +97,49 @@ nav a:hover {
     display: flex;
 }
 
-/* hamburger menü plusz gomb*/
+
+/* main div formázása */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: 40px;
+    padding: 40px;
+}
+
+
+
+.newMeme{
+    height: 300px;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    background-image: url('../img/transparent.jpg');
+    position: relative;
+}
+
+
+.newMeme > label {
+    background-color: #62605c;
+    position: absolute;
+    top: 70%;
+    right: 5%;
+    color: whitesmoke;
+    font-size: 1rem;
+    border-radius: 1.875rem;
+    padding: 0.6rem;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.newMeme > label:hover {
+    transform: scale(1.1);
+}
+
+
+/* hamburger menü */
 
 
 
@@ -119,42 +161,11 @@ nav a:hover {
         display: none;
     }
 
-    .fixed {
-        width: 40px;
-        height: 40px;
-    }
-
-    .fixed > i {
-        font-size: 2rem;
-    }
+   
 }
 
 /*hozzáadás gomb*/
 
-
-.fixed{
-    position: fixed;
-    right: 30px;
-    top: 70%;
-    background-color: var(--text-color);
-    height: 60px;
-    width: 60px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 1000;
-}
-
-.fixed:hover {
-    transform: scale(1.1);
-}
-
-.fixed > i {
-    color: whitesmoke;
-    font-size: 2.5rem;
-}
 
 
 
