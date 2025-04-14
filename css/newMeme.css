@@ -21,6 +21,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1.25rem 1.875rem;
+    
 }
 
 .menu-logo {
@@ -40,6 +41,7 @@ nav {
     display: flex;
     gap: 2rem;
     font-size: 2rem;
+    z-index: 1000;
 }
 
 nav a {
@@ -105,6 +107,7 @@ main{
     justify-content: center;
     align-items: center;
     gap: 40px;
+    flex-direction: column;
     position: 40px;
     padding: 40px;
 }
@@ -118,6 +121,7 @@ main{
     border-radius: 0.5rem;
     background-image: url('../img/transparent.jpg');
     position: relative;
+   
 }
 
 
@@ -138,6 +142,33 @@ main{
     transform: scale(1.1);
 }
 
+.newMeme>input {
+    display: none;
+}
+
+.uploadButton {
+    background-color: var(--text-color);
+    width: 500px;
+    padding: 15px;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.uploadButton>button {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    background-color: var(--text-color);
+    border: none;
+    cursor: pointer;
+}
+
+.uploadButton:hover {
+    transform: scale(1.01);
+}
 
 /* hamburger menü */
 
@@ -147,6 +178,11 @@ main{
     .hamburger-menu {
         display: flex;
     }
+
+    .uploadButton, .newMeme {
+        width: 350px;
+    }
+
 
     nav {
         flex-direction: row;
